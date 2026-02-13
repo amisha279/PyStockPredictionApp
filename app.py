@@ -1,27 +1,3 @@
-#from flask import Flask
-#app = Flask(__name__)
-#@app.route('/')
-#def hello_world():
-    #return 'Hello World!'
-
-#from flask import Flask, render_template, request, jsonify
-#app = Flask(__name__)
-#@app.route("/")
-#def chat_page():
-#    return render_template("chat.html")
-
-#@app.route("/ask", methods=["POST"])
-#def ask():
-#    user_msg = request.json.get("message", "")
-
-    # Your logic here — for now, return a simple response
-#    bot_reply = f"You said: {user_msg}"
-
-#    return jsonify({"reply": bot_reply})
-
-#if __name__ == "__main__":
-#    app.run(debug=True)
-
 from flask import Flask, render_template, request, jsonify
 import joblib
 import yfinance as yf
@@ -124,4 +100,5 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
